@@ -1,2 +1,3 @@
 # Breadboard-CPU
-This is my CPU project.
+This is my Breadboard CPU project.
+
