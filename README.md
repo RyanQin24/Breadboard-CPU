@@ -1,4 +1,6 @@
 # Breadboard-CPU
-This is my Breadboard CPU project.
+This is my Breadboard CPU project. This CPU has a 4-bit data width and a 8-bit (Byte) instruction width. The CPU can perform instruction jump, load immediate to register, and 
+Add/Subtraction arithmetic between 4 registers.
 
-<img width="300" height="100" alt="20260502_204924" src="https://github.com/user-attachments/assets/e0630af6-3b20-4574-a30a-d4cc0b3b1557" />
+<img width="3773" height="1636" alt="20260502_204924" src="https://github.com/user-attachments/assets/50cdb289-010a-4f2b-b8e8-d634571a653e" />
+
