@@ -60,7 +60,9 @@ Note: the indicator led is only useful to indicate overflow and underflow if nex
 **_5) Control Circuit design_**
 
 
-Control circuit is required to ensure registers (PC and data) transition to the right state. Below, I specify how the control circuit handles 
+Control circuit is required to ensure registers (PC and data) transition to the right state while ALU outputsaccording to the given ALU instruction (ADD/SUB). 
+
+Below, is the implementation of the control circuits component:
 
 ** **
 
@@ -72,3 +74,5 @@ The program is written below with instruction encoded according to my ISA in par
 ** **
 
 **_7) Demo_**
+
+Click this link will show progress of the build and the demo of the test program.
