@@ -37,11 +37,12 @@ Note: for the case of R0 (Register 0 with value always being 0), it is a special
 The ALU is the component doing Adding and subtracting.
 
 **_5) Control Circuit design_**
-Note: while my ISA makes identifying registers easy while ALU select input is just a function of one Opcode bit, control circuit is still used for controlling the data input of the register files.
+
+Control circuit is required to ensure registers (PC and data) transition to the right state. Below, I specify how the control circuit handles 
 
 **_6) Programming_**
 I have written a test program to test out the CPU.
 
-The program is as follows
+The program is written below with instruction encoded according to my ISA in part 1).
 
 **_7) Conclusion_**
