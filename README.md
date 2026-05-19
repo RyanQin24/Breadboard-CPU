@@ -4,6 +4,13 @@ Add/Subtraction arithmetic between 4 registers.
 
 <img width="3773" height="1636" alt="20260502_204924" src="https://github.com/user-attachments/assets/50cdb289-010a-4f2b-b8e8-d634571a653e" />
 
+&nbsp;
+
+Here is the high-level diagram:
+
+<img width="865" height="1002" alt="Screenshot 2026-05-19 120219" src="https://github.com/user-attachments/assets/a7ab9c89-e007-40d0-b78d-57242fdde6ae" />
+
+
 ** **
 **Below, it documents the architecture and the design steps taken to build this Breadboard CPU**
 
