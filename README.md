@@ -52,6 +52,9 @@ Note: for the case of R0 (Register 0 with value always being 0), it is a special
 
 Here is the implementation of the ALU:
 
+*The overflow/underflow flag bits aren't shown in high-level diagram since the outputs only go to indicator leds.
+Note: the indicator led is only useful to indicate overflow and underflow if next instruction to run is ADD or SUB respectively. Otherwise the output value is garbage in relation to your instruction.
+
 ** **
 
 **_5) Control Circuit design_**
