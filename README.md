@@ -71,6 +71,4 @@ The program is written below with instruction encoded according to my ISA in par
 
 ** **
 
-**_7) Conclusion_**
-
-Here are the reflections for 
+**_7) Demo_**
