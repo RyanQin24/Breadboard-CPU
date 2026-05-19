@@ -31,8 +31,7 @@ After a proper ISA is planned, the next fundamental challenge is the PC and cloc
 and hence, registers reset. Without this feature, my CPU would start at garbage address or have garbage value in register.
 
 Here is the implementation of the PC system:
-<img width="698" height="718" alt="Screenshot 2026-05-19 132954" src="https://github.com/user-attachments/assets/52d04962-584e-49f5-a432-e7cf0519eecc" />
-
+<img width="673" height="671" alt="Screenshot 2026-05-19 135156" src="https://github.com/user-attachments/assets/e11e9ff8-ccd3-45c4-a029-3d1673c5537c" />
 
 ** **
 
