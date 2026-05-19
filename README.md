@@ -46,16 +46,26 @@ Beside the register IC, the register file also contains control circuits for the
 
 Note: for the case of R0 (Register 0 with value always being 0), it is a special case. Instead of using physical registers, R0 is effectively always zero by wiring ground to R0 input on ALU's mux.
 
+** **
+
 **_4) ALU design_**
 The ALU is the component doing Adding and subtracting.
 
+** **
+
 **_5) Control Circuit design_**
 
+** **
+
 Control circuit is required to ensure registers (PC and data) transition to the right state. Below, I specify how the control circuit handles 
+
+** **
 
 **_6) Programming_**
 I have written a test program to test out the CPU.
 
 The program is written below with instruction encoded according to my ISA in part 1).
+
+** **
 
 **_7) Conclusion_**
