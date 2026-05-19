@@ -32,7 +32,7 @@ Beside the register IC, the register file also contains control circuits for the
 **_4) ALU design_**
 The ALU is the component doing Adding and subtracting.
 
-**_5) COntrol Circuit design_**
+**_5) Control Circuit design_**
 Note: while my ISA makes identifying registers easy while ALU select input is just a function of one Opcode bit, control circuit is still used for controlling the data input of the register files.
 
 **_6) Programming_**
