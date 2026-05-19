@@ -30,7 +30,9 @@ _Note: XX denotes don't care and PC denotes absolute value that PC will be set a
 After a proper ISA is planned, the next fundamental challenge is the PC and clock system. However, since my Register IC(Integrated Circuit) does not have auto reset (ability to set all bits to 0) on power on, I needed a circuit that can perform reset. Thus, the reset circuit holds low for enough time to have at least 2 clock ticks
 and hence, registers reset. Without this feature, my CPU would start at garbage address or have garbage value in register.
 
-Here is the implementation of the PC system
+Here is the implementation of the PC system:
+<img width="698" height="718" alt="Screenshot 2026-05-19 132954" src="https://github.com/user-attachments/assets/52d04962-584e-49f5-a432-e7cf0519eecc" />
+
 
 ** **
 
