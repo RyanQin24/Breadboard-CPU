@@ -49,7 +49,8 @@ Note: for the case of R0 (Register 0 with value always being 0), it is a special
 ** **
 
 **_4) ALU design_**
-The ALU is the component doing Adding and subtracting.
+
+Here is the implementation of the ALU:
 
 ** **
 
@@ -68,3 +69,5 @@ The program is written below with instruction encoded according to my ISA in par
 ** **
 
 **_7) Conclusion_**
+
+Here are the reflections for 
