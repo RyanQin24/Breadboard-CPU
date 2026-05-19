@@ -16,7 +16,7 @@ Here is the high-level diagram:
 
 **_1) ISA designing_**
 
-This was my first step, as the hardware design is very dependent on the ISA.
+Since the hardware design/implementation is very dependent on the ISA, this is definitely my first step!
 
 Here are the planned 4 instructions that this CPU runs:
 
