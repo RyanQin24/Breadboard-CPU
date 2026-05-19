@@ -15,7 +15,7 @@ Here is the high-level diagram:
 
 **_1) ISA designing_**
 
-Since the hardware design/implementation is very dependent on the ISA, this is definitely my first step!
+Since the hardware design/implementation is very dependent on the ISA(Instruction Set Architecture), this is definitely my first step!
 
 Here are the planned 4 instructions that this CPU runs:
 
@@ -27,9 +27,10 @@ _Note: XX denotes don't care and PC denotes absolute value that PC will be set a
 
 **_2) PC, reset, and clock design_**
 
-After a proper ISA is planned, the next fundamental challenge is the PC and the clock.
+After a proper ISA is planned, the next fundamental challenge is the PC and clock system. However, since my Register IC(Integrated Circuit) does not have auto reset (ability to set all bits to 0) on power on, I needed a circuit that can perform reset. Thus, the reset circuit holds low for enough time to have at least 2 clock ticks
+and hence, registers reset. Without this feature, my CPU would start at garbage address or have garbage value in register.
 
-Below, it shows my initial schematic to my variable frequency square wave Clock generator:
+
 
 ** **
 
