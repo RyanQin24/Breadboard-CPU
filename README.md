@@ -17,6 +17,7 @@ Here are the planned 4 instructions that this CPU runs:
 
 _Note: XX denotes don't care and PC denotes absolute value that PC will be set after running the jump instruction._
 
+** **
 
 **_2) PC, reset, and clock design_**
 
