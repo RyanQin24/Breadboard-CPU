@@ -33,7 +33,10 @@ and hence, registers reset. Without this feature, my CPU would start at garbage 
 Here is the implementation of the PC system:
 
 <img width="688" height="682" alt="Screenshot 2026-05-19 135253" src="https://github.com/user-attachments/assets/68cd50c4-2b30-4247-90e9-0d9243180f69" />
+
 Note: the S[1] and S[2] signal represents the MSB and LSB of the select signal for the 4:1 mux respectively.
+
+For a robust reset, when S[1] = 0, the condition for S[0] is don't care and hence, why both case for S = 00 and 01 is input wired to ground.
 
 ** **
 
