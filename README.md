@@ -55,7 +55,6 @@ The ALU is the component doing Adding and subtracting.
 
 **_5) Control Circuit design_**
 
-** **
 
 Control circuit is required to ensure registers (PC and data) transition to the right state. Below, I specify how the control circuit handles 
 
