@@ -9,7 +9,7 @@ Add/Subtraction arithmetic between 4 registers.
 
 **_1) ISA designing_**
 
-This was my first step, as the implementation is very dependent on the ISA.
+This was my first step, as the hardware design is very dependent on the ISA.
 
 Here are the planned 4 instructions that this CPU runs:
 
@@ -20,14 +20,24 @@ _Note: XX denotes don't care and PC denotes absolute value that PC will be set a
 
 **_2) PC, reset, and clock design_**
 
-After a proper ISA is designed, 
+After a proper ISA is planned, the next fundamental challenge is the PC and the clock.
+
+Below, it shows my initial schematic to my variable frequency square wave Clock generator:
+
+
 
 **_3) Register File design_**
+Beside the register IC, the register file also contains control circuits for the mux used to direct the input data. Since enable required an extra input f
 
 **_4) ALU design_**
+The ALU is the component doing Adding and subtracting.
 
 **_5) COntrol Circuit design_**
+Note: while my ISA makes identifying registers easy while ALU select input is just a function of one Opcode bit, control circuit is still used for controlling the data input of the register files.
 
 **_6) Programming_**
+I have written a test program to test out the CPU.
+
+The program is as follows
 
 **_7) Conclusion_**
