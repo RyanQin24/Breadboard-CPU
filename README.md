@@ -32,7 +32,8 @@ and hence, registers reset. Without this feature, my CPU would start at garbage 
 
 Here is the implementation of the PC system:
 
-<img width="673" height="671" alt="Screenshot 2026-05-19 135156" src="https://github.com/user-attachments/assets/e11e9ff8-ccd3-45c4-a029-3d1673c5537c" />
+<img width="688" height="682" alt="Screenshot 2026-05-19 135253" src="https://github.com/user-attachments/assets/68cd50c4-2b30-4247-90e9-0d9243180f69" />
+Note: the S[1] and S[2] signal represents the MSB and LSB of the select signal for the 4:1 mux respectively.
 
 ** **
 
