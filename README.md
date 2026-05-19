@@ -27,7 +27,10 @@ Below, it shows my initial schematic to my variable frequency square wave Clock 
 
 
 **_3) Register File design_**
-Beside the register IC, the register file also contains control circuits for the mux used to direct the input data. Since enable required an extra input f
+
+Beside the register IC, the register file also contains control circuits for the mux used to direct the input data.
+
+Note: for the case of R0 (Register 0 with value always being 0), it is a special case. Instead of using physical registers, R0 is effectively always zero by wiring ground to R0 input on ALU's mux.
 
 **_4) ALU design_**
 The ALU is the component doing Adding and subtracting.
