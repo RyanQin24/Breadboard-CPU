@@ -8,8 +8,7 @@ Add/Subtraction arithmetic between 4 registers.
 
 Here is the high-level diagram:
 
-<img width="865" height="1002" alt="Screenshot 2026-05-19 120219" src="https://github.com/user-attachments/assets/a7ab9c89-e007-40d0-b78d-57242fdde6ae" />
-
+<img width="843" height="1030" alt="Screenshot 2026-05-19 125018" src="https://github.com/user-attachments/assets/745123f2-3cdd-4cf2-9600-b242d0d749c9" />
 
 ** **
 **Below, it documents the architecture and the design steps taken to build this Breadboard CPU**
