@@ -32,7 +32,7 @@ After a proper ISA is planned, the next fundamental challenge is the PC and the 
 
 Below, it shows my initial schematic to my variable frequency square wave Clock generator:
 
-
+** **
 
 **_3) Register File design_**
 
