@@ -52,8 +52,14 @@ Note: for the case of R0 (Register 0 with value always being 0), it is a special
 
 Here is the implementation of the ALU:
 
+<img width="955" height="831" alt="Screenshot 2026-05-19 202213" src="https://github.com/user-attachments/assets/ce8d0dd4-f2f2-405e-a1a6-7cbe72ccd08a" />
+
+
 *The overflow/underflow flag bits aren't shown in high-level diagram since the outputs only go to indicator leds.
+
 Note: the indicator led is only useful to indicate overflow and underflow if next instruction to run is ADD or SUB respectively. Otherwise the output value is garbage in relation to your instruction.
+
+**Implementing the adder and subtractor...**
 
 ** **
 
@@ -70,6 +76,19 @@ Below, is the implementation of the control circuits component:
 I have written a test program to test out the CPU.
 
 The program is written below with instruction encoded according to my ISA in part 1).
+
+```asm
+# comments include (Instruction data [7:0])
+# this ISA is defined for my specific CPU. It is not a common ISA like ARM64 or RISC-V.
+Add R0 R0 R0 #(00 00 00 11) does no operation at start of PC 0x0 (R0 R0 R0 represents RD, RS1, and RS2 respectively)
+Move R1 6 #(01100101)
+Move R2 8 #(10001001)
+Move R3 4 #(01001101)
+Add R3 R1 R2 #(01101111)
+Sub R1 R1 R2 #(01100110)
+Add R2 R1 R0 #(01001011)
+Jump 1 #(00010000)
+```
 
 ** **
 
