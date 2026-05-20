@@ -67,6 +67,9 @@ Control circuit is required to ensure registers (PC and data) transition to the 
 
 Below, is the implementation of the control circuits component:
 
+<img width="1139" height="328" alt="Screenshot 2026-05-19 210405" src="https://github.com/user-attachments/assets/27546b91-ad8c-43ac-bdb0-b8ff359a065c" />
+
+
 Note: most of the control signal being just wire from the output of my "Instruction data" signal is the result of properly formatting the binary encoding of the ISA. Its possible to do a arbitary encoding but it
 will make the control circuit very complex.
 ** **
