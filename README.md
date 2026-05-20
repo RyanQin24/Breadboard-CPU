@@ -42,7 +42,10 @@ For a robust reset, when S[1] = 0, the condition for S[0] is don't care and henc
 
 **_3) Register File design_**
 
-Since the register file contains more than registers and it also contains duplicates, lets break down the register file with a high-level diagram.
+Important: For register RS1, Rs2, RD, the 2-bit tag identifies register by its number. E.g. if RS1 = 01, it implies we want RS1 to be the output value from register 1.
+
+Since the register file contains more than registers and it also contains duplicates, lets break down the register file with a high-level diagram:
+<img width="1043" height="969" alt="image" src="https://github.com/user-attachments/assets/adc11fcb-8fbc-41f5-8883-8b3b21cbd8b1" />
 
 Note: for the case of R0 (Register 0 with value always being 0), it is a special case. Instead of using physical registers, R0 is effectively always zero by wiring ground to R0 input on ALU's mux.
 
