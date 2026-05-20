@@ -75,7 +75,15 @@ will make the control circuit very complex.
 
 From part 2), for the MSB and LSB flag circuit, it is the decoder circuit that tells the register file based on current instruction's opcode, what should the mux's 2-bit select lines be. 
 
-For my ISA, MSB should be 
+Here's how the decoder design is justified (Karnaugh map is used to synthesize the circuit):
+
+1) For MSB, from Part 2), it needs to flag for instruction Move, ADD, and Sub. For Add and Sub, "Instruction data [1]"
+ bit is always "1" while for move "Instruction data [0]" bit is always [1]. Hence, we simply need to check either "Instruction data [1]"
+or "Instruction data [0]" is "1" to only reject the jump instruction
+
+2) For MSB, from Part 2), it needs to flag for instruction Jump, Add, and Sub. For Add and Sub, "Instruction data [1]"
+ bit is always "1" while for Jump, all "Instruction data" bits are "0". Hence, we can simply detect if either "Instruction data [1]"
+bit is "1" or "Instruction data [0]" bit is "0".
 
 ** **
 
