@@ -53,7 +53,15 @@ For any register R1,R2,R3 (denoted as RN), it's circuit diagram is as follows:
 
 <img width="937" height="704" alt="Screenshot 2026-05-19 222955" src="https://github.com/user-attachments/assets/f5aa54c5-1ce5-4bcc-a461-4076973ce402" />
 
-Note: QN denotes the repsective Q-signal (output from 2-4 decoder for register RN)
+Note: QN denotes the repsective Q-signal (output from 2-4 decoder for register RN). For S[1] and S[0] it denotes the MSB and LSB for the MUX select lines respectively.
+
+Here's justification on why the control circuit for the mux select lines:
+
+1) For S[1], it only needs to be "1" if the register is a target register, the register is storing value from a Move or Add/Sub instruction, and if reset phase is done. Hence, we only need AND gates.
+   For MSB Flag, we assume control circuit can properly flag for Opcodes that indicate the instruction is Move, or Add/Sub.
+
+2) For S[0], after the reset state, it should be a "1" when maintaining register value (when instruction does not write to the register at upcoming clock tick) or when its slected for instruction Add/Sub.
+   Hence, RST signal is anded to create a bit-mask for reset phase, while we complement select so if register is not selected, it will always at non-reset phase result in S[0] = 1. If however, phase is still        non-reset and the register is selected, LSB flag must be able to flag for Add/Sub instruction.
 
 ** **
 
