@@ -79,13 +79,13 @@ I have written a test program to test out the CPU.
 # comments include (Instruction data [7:0])
 # this ISA is defined for my specific CPU. It is not a common ISA like ARM64 or RISC-V.
 Add R0 R0 R0 #(00 00 00 11) does no operation at start of PC 0x0 (R0 R0 R0 represents RD, RS1, and RS2 respectively)
-Move R1 6 #(01100101)
-Move R2 8 #(10001001)
-Move R3 4 #(01001101)
-Add R3 R1 R2 #(01101111)
-Sub R1 R1 R2 #(01100110)
-Add R2 R1 R0 #(01001011)
-Jump 1 #(00010000)
+Move R1 6 #(01 10 01 01)
+Move R2 8 #(10 00 10 01)
+Move R3 4 #(01 00 11 01)
+Add R3 R1 R2 #(01 10 11 11)
+Sub R1 R1 R2 #(01 10 01 10)
+Add R2 R1 R0 #(01 00 10 11)
+Jump 1 #(00 01 00 00)
 ```
 
 ** **
