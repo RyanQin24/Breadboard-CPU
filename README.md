@@ -75,8 +75,6 @@ Below, is the implementation of the control circuits component:
 **_6) Programming_**
 I have written a test program to test out the CPU.
 
-The program is written below with instruction encoded according to my ISA in part 1).
-
 ```asm
 # comments include (Instruction data [7:0])
 # this ISA is defined for my specific CPU. It is not a common ISA like ARM64 or RISC-V.
