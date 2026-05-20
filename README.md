@@ -42,7 +42,7 @@ For a robust reset, when S[1] = 0, the condition for S[0] is don't care and henc
 
 **_3) Register File design_**
 
-Beside the register IC, the register file also contains control circuits for the mux used to direct the input data.
+Since the register file contains more than registers and it also contains duplicates, lets break down the register file with a high-level diagram.
 
 Note: for the case of R0 (Register 0 with value always being 0), it is a special case. Instead of using physical registers, R0 is effectively always zero by wiring ground to R0 input on ALU's mux.
 
