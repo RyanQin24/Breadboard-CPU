@@ -49,6 +49,12 @@ Since the register file contains more than registers and it also contains duplic
 
 Note: for the case of R0 (Register 0 with value always being 0), it is a special case. Instead of using physical registers, R0 is effectively always zero by wiring ground to R0 input on ALU's mux.
 
+For any register R1,R2,R3 (denoted as RN), it's circuit diagram is as follows:
+
+<img width="937" height="704" alt="Screenshot 2026-05-19 222955" src="https://github.com/user-attachments/assets/f5aa54c5-1ce5-4bcc-a461-4076973ce402" />
+
+Note: QN denotes the repsective Q-signal (output from 2-4 decoder for register RN)
+
 ** **
 
 **_4) ALU design_**
