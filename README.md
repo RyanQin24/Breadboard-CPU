@@ -92,4 +92,4 @@ Jump 1 #(00010000)
 
 **_7) Demo_**
 
-Click this link will show progress of the build and the demo of the test program.
+This link will show progress of the build and the demo of the test program.
