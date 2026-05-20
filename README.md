@@ -54,12 +54,9 @@ Here is the implementation of the ALU:
 
 <img width="955" height="831" alt="Screenshot 2026-05-19 202213" src="https://github.com/user-attachments/assets/ce8d0dd4-f2f2-405e-a1a6-7cbe72ccd08a" />
 
-
 *The overflow/underflow flag bits aren't shown in high-level diagram since the outputs only go to indicator leds.
 
 Note: the indicator led is only useful to indicate overflow and underflow if next instruction to run is ADD or SUB respectively. Otherwise the output value is garbage in relation to your instruction.
-
-**Implementing the adder and subtractor...**
 
 ** **
 
