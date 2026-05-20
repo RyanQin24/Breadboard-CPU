@@ -19,7 +19,7 @@ Since the hardware design/implementation is very dependent on the ISA(Instructio
 
 Here are the planned 4 instructions that this CPU runs:
 
-<img width="713" height="390" alt="Screenshot 2026-05-19 071219" src="https://github.com/user-attachments/assets/1394da21-2aac-4883-89bc-e89f0d153301" />
+<img width="1286" height="741" alt="Screenshot 2026-05-19 211901" src="https://github.com/user-attachments/assets/6e3923e5-a9c3-48f6-8365-6cfa1c9252f6" />
 
 _Note: XX denotes don't care and PC denotes absolute value that PC will be set after running the jump instruction._
 
@@ -72,6 +72,11 @@ Below, is the implementation of the control circuits component:
 
 Note: most of the control signal being just wire from the output of my "Instruction data" signal is the result of properly formatting the binary encoding of the ISA. Its possible to do a arbitary encoding but it
 will make the control circuit very complex.
+
+From part 2), for the MSB and LSB flag circuit, it is the decoder circuit that tells the register file based on current instruction's opcode, what should the mux's 2-bit select lines be. 
+
+For my ISA, MSB should be 
+
 ** **
 
 **_6) Programming_**
