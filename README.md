@@ -19,7 +19,7 @@ Since the hardware design/implementation is very dependent on the ISA(Instructio
 
 Here are the planned 4 instructions that this CPU runs:
 
-<img width="1286" height="741" alt="Screenshot 2026-05-19 211901" src="https://github.com/user-attachments/assets/6e3923e5-a9c3-48f6-8365-6cfa1c9252f6" />
+<img width="1077" height="583" alt="Screenshot 2026-05-20 212701" src="https://github.com/user-attachments/assets/40da63d9-abbc-4dcf-897e-1927cc65a65f" />
 
 _Note: XX denotes don't care and PC denotes absolute value that PC will be set after running the jump instruction._
 
