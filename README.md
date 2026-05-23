@@ -34,6 +34,8 @@ Here is the implementation of the Clock Circuit (clock frequency ~0.5-3Hz):
 
 <img width="1316" height="685" alt="Screenshot 2026-05-22 203612" src="https://github.com/user-attachments/assets/31cd95ee-a903-41ae-82bf-7b70bb61d0c3" />
 
+&nbsp;
+&nbsp;
 
 Here is the implementation of the Reset Circuit:
 
