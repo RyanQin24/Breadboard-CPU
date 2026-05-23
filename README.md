@@ -34,7 +34,7 @@ Here is the implementation of the Clock Circuit:
 
 Here is the implementation of the Reset Circuit:
 
-<img width="1674" height="895" alt="Screenshot 2026-05-22 201950" src="https://github.com/user-attachments/assets/ad93cd0b-8a35-4dcb-82fb-6761c438ad63" />
+<img width="1674" height="900" alt="Screenshot 2026-05-22 202641" src="https://github.com/user-attachments/assets/5734d7ff-ed00-4e35-9559-c8dd96a1e9ce" />
 
 *Since my reset is active low, this 555 timer is configured to be monostable at a high state. The transition from low state (initial state when power is applied) to high state takes roughly 5 seconds. Hence, with clock ranging from 0.5-3Hz (0.33 second to 2 second period), a 3 second reset time is enough to ensure 
 the clock can tick at least once in the reset state.
