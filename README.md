@@ -30,9 +30,14 @@ _Note: XX denotes don't care and PC denotes absolute value that PC will be set a
 After a proper ISA is planned, the next fundamental challenge is the PC and clock system. However, since my Register IC(Integrated Circuit) does not have auto reset (ability to set all bits to 0) on power on, I needed a circuit that can perform reset. Thus, the reset circuit holds low for enough time to have at least 2 clock ticks
 and hence, registers reset. Without this feature, my CPU would start at garbage address or have garbage value in register.
 
+Here is the implementation of the Clock Circuit:
+
 Here is the implementation of the Reset Circuit:
 
 <img width="1674" height="895" alt="Screenshot 2026-05-22 201950" src="https://github.com/user-attachments/assets/ad93cd0b-8a35-4dcb-82fb-6761c438ad63" />
+
+*Since my reset is active low, this 555 timer is configured to be monostable at a high state. The transition from low state (initial state when power is applied) to high state takes roughly 5 seconds. Hence, with clock ranging from 0.5-3Hz (0.33 second to 2 second period), a 3 second reset time is enough to ensure 
+the clock can tick at least once in the reset state.
 
 Here is the implementation of the PC system:
 
