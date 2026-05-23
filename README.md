@@ -35,7 +35,7 @@ and hence, registers reset. Without this feature, my CPU would start at garbage 
 
 Here is the implementation of the Clock Circuit (clock frequency ~0.5-3Hz):
 
-<img width="1316" height="685" alt="Screenshot 2026-05-22 203612" src="https://github.com/user-attachments/assets/31cd95ee-a903-41ae-82bf-7b70bb61d0c3" />
+<img width="1273" height="708" alt="Screenshot 2026-05-22 204217" src="https://github.com/user-attachments/assets/bc96a2df-1f8e-49f7-9dab-da2fe4723196" />
 
 &nbsp;
 &nbsp;
